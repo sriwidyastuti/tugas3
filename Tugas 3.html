@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sistem Informasi Toko Tumpang Sari</title>
+</head>
+<body>
+<div class="container">
+<header class="header">
+	<div class="logo">
+		<img src="ts.jpg" height="150" width="200">
+	</div>
+	<nav class="nav">
+		<h1>Selamat Datang</h1>
+		<b>Di Sistem Informasi Toko Tumpang Sari</b>
+		<ul>
+		<li><a href="#signup">Sign Up</a></li>
+		<li><a href="#logout">Logout</a></li>
+	</ul>
+	</nav>
+</header>	
+<div class="wrapper">
+	<aside class="sidebar">
+		<div style="padding: 10px">
+			<b>Menu</b><br>
+			<hr>
+			<a href="#">Dashboard</a><br />
+			<a href="#">Daftar Keanggotaan</a><br />
+			<a href="#">Layanan Kami</a><br />
+			<a href="#">Contact Person</a><br />
+		</div>
+	</aside>
+<main class="content">
+	<div style="padding: 10px">
+		<h2 style="margin: 0px">Daftar Keanggotaan</h2>
+		<hr>
+		<form>
+			<table>
+				<tr>
+					<td>Nama</td>
+					<td>:</td>
+					<td><input type="text" name="nama" value="" placeholder="Tuliskan Nama Anda">
+						<small style="color: red" id="err_nama"></small>
+					</td>
+				</tr>
+				<tr>
+					<td>Password</td>
+					<td>:</td>
+					<td><input type="password" name="password" placeholder="Tuliskan Password Anda">
+						<small style="color: red" id="err_password">
+					</td>
+				</tr>
+				<tr>
+					<td>Jenis Kelamin</td>
+					<td>:</td>
+					<td>
+						<input type="radio" name="jeniskelamin" value="laki-laki">Laki - Laki
+						<input type="radio" name="janiskelamin" value="perempuan">Perempuan
+						<br>
+						<small style="color: red" id="err_jeniskelamin"></small>
+					</td>
+				</tr>
+				<tr>
+					<td>Keanggotaan</td>
+					<td>:</td>
+					<td>
+						<input type="checkbox" name="keanggotaan" value="supplier">Supplier	
+						<input type="checkbox" name="keanggotaan" value="Reseller">Reseller
+						<input type="checkbox" name="keanggotaan">Member Regular
+					</td>
+				</tr>
+				<tr>
+					<td>Alamat Toko</td>
+					<td>:</td>
+					<td>
+						<select name="alamattoko">
+							<option value="menyali">Desa Menyali</option>
+							<option value="jagaraga">Desa Jagaraga</option>
+							<option value="sawan">Desa Sawan</option>
+							<option value="sangsit">Desa Sangsit</option>
+						</select><br>
+					</td>
+				</tr>
+				<tr>
+					<td>Nomor Telfon</td>
+					<td>:</td>
+					<td><input type="text" name="notlp" placeholder="Masukkan Nomor Telfon Anda"></td>
+				</tr>
+				<tr>
+					<td>Keterangan Tambahan</td>
+					<td>:</td>
+					<td>
+						<textarea name="keterangan" rows="5" cols="20"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3" align="right"><button>Submit</button></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</main>
+</div>
+</div>
+
+
+</body>
+</html>
