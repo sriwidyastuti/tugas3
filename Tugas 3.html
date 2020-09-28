@@ -1,109 +1,99 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Sistem Informasi Toko Tumpang Sari</title>
-<link rel="stylesheet" type="text/css" href="styletugas3.css>
+	<title>Daftar Keanggotaan Tumpang Sari</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
-<div class="container">
-<header class="header">
-	<div class="logo">
-		<img src="ts.jpg" height="150" width="200">
-	</div>
-	<nav class="nav">
-		<h1>Selamat Datang</h1>
-		<b>Di Sistem Informasi Toko Tumpang Sari</b>
-		<ul>
-		<li><a href="#signup">Sign Up</a></li>
-		<li><a href="#logout">Logout</a></li>
-	</ul>
-	</nav>
-</header>	
+<body style="background-color: #CBE0E9">
+  <div class="jumbotron jumbotron-fluid">
+      <h1 class="display-4"><b>Selamat Datang</b></h1>
+      <p class="lead">Toko Tumpang Sari menyediakan berbagai macam sembako dan kebutuhan sehari-hari dengan harga grosir ataupun eceran.</p>
+  <div class="navbar">
+      <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd">
+      <a class="navbar-brand" href="#">Daftar Keanggotaan</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Produk</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Layanan Kami</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact Person</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+  </div>
 <div class="wrapper">
-	<aside class="sidebar">
-		<div style="padding: 10px">
-			<b>Menu</b><br>
-			<hr>
-			<a href="#">Dashboard</a><br />
-			<a href="#">Daftar Keanggotaan</a><br />
-			<a href="#">Layanan Kami</a><br />
-			<a href="#">Contact Person</a><br />
-		</div>
-	</aside>
-<main class="content">
-	<div style="padding: 10px">
-		<h2 style="margin: 0px">Daftar Keanggotaan</h2>
-		<hr>
-		<form>
-			<table>
-				<tr>
-					<td>Nama</td>
-					<td>:</td>
-					<td><input type="text" name="nama" value="" placeholder="Tuliskan Nama Anda">
-						<small style="color: red" id="err_nama"></small>
-					</td>
-				</tr>
-				<tr>
-					<td>Password</td>
-					<td>:</td>
-					<td><input type="password" name="password" placeholder="Tuliskan Password Anda">
-						<small style="color: red" id="err_password">
-					</td>
-				</tr>
-				<tr>
-					<td>Jenis Kelamin</td>
-					<td>:</td>
-					<td>
-						<input type="radio" name="jeniskelamin" value="laki-laki">Laki - Laki
-						<input type="radio" name="janiskelamin" value="perempuan">Perempuan
-						<br>
-						<small style="color: red" id="err_jeniskelamin"></small>
-					</td>
-				</tr>
-				<tr>
-					<td>Keanggotaan</td>
-					<td>:</td>
-					<td>
-						<input type="checkbox" name="keanggotaan" value="supplier">Supplier	
-						<input type="checkbox" name="keanggotaan" value="Reseller">Reseller
-						<input type="checkbox" name="keanggotaan">Member Regular
-					</td>
-				</tr>
-				<tr>
-					<td>Alamat Toko</td>
-					<td>:</td>
-					<td>
-						<select name="alamattoko">
-							<option value="menyali">Desa Menyali</option>
-							<option value="jagaraga">Desa Jagaraga</option>
-							<option value="sawan">Desa Sawan</option>
-							<option value="sangsit">Desa Sangsit</option>
-						</select><br>
-					</td>
-				</tr>
-				<tr>
-					<td>Nomor Telfon</td>
-					<td>:</td>
-					<td><input type="text" name="notlp" placeholder="Masukkan Nomor Telfon Anda"></td>
-				</tr>
-				<tr>
-					<td>Keterangan Tambahan</td>
-					<td>:</td>
-					<td>
-						<textarea name="keterangan" rows="5" cols="20"></textarea>
-					</td>
-				</tr>
-				<tr>
-					<td colspan="3" align="right"><button>Submit</button></td>
-				</tr>
-			</table>
-		</form>
-	</div>
-</main>
+    <aside class="sidebar">
+     <div class="card border-primary mb-3" style="max-width: 18rem;">
+      <div class="card-header">Promo</div>
+        <div class="card-body text-primary">
+        <h5 class="card-title">Promo Bulan Ini</h5>
+        <p class="card-text">Khusus bagi pelanggan setia! Temukan beberapa produk promo bulan ini!</p>
+        <a href="#" class="btn btn-primary">Klik Disini!</a>
+        </div>
+      </div>
+      <div class="card border-primary mb-3" style="max-width: 18rem;">
+      <div class="card-header">Alamat</div>
+        <div class="card-body text-primary">
+        <h5 class="card-title">Toko Tumpang Sari</h5>
+        <p class="card-text">Jalan Desa Jagaraga-Menyali
+        (0857) 3953 - ****</p>
+        <a href="#" class="btn btn-primary">Maps</a>
+        </div>
+      </div>
+    </aside>
 </div>
-<footer class="footer">
-	<font color="white">Copyright &#169; Toko Tumpang Sari</white>
-</footer>
-</div>	
+<div class="content">
+  <h3>Daftar Keanggotaan</h3><br>
+ <form>
+    <div class="form-group">
+      <label for="FormControlInput1"><h6>Nama Lengkap</h6></label>
+        <input type="name" class="form-control" id="FormControlInput1" placeholder="Masukkan Nama Anda">
+      <label for="inputPassword2"><h6>Password</h6></label>
+        <input type="password" class="form-control" id="o" name="inputPassword2" placeholder="Masukkan Password Anda">
+        <small id="passwordHelpBlock" class="form-text text-muted">
+        Password Anda harus terdiri dari 8-20 karakter dengan huruf dan angka.
+        </small>
+      <label for="inputGender"><h6>Jenis Kelamin</h6></label><br>
+        <input type="radio" name="jeniskelamin" value="laki-laki">Laki-Laki
+        <input type="radio" name="jeniskelamin" value="perempuan">Perempuan<br>
+      <label for="alamattoko"><h6>Alamat Toko</h6></label>
+        <select class="custom-select" id="alamattoko" required>
+        <option selected disabled value="">Pilih Alamat Toko</option>
+        <option>Desa Menyali</option>
+        <option>Desa Jagaraga</option>
+        <option>Desa Sawan</option>
+        <option>Desa Sangsit</option>
+        <option>lainnya ...</option>
+        </select>
+      <label for="keanggotaan"><h6>Keanggotaan</h6></label>
+        <select class="custom-select" id="keanggotaan" required>
+        <option selected disabled value="">Pilih Keanggotaan</option>
+        <option>Member Regular</option>
+        <option>Reseller</option>
+        <option>Supplier</option>
+        </select>
+      <label for="notelp"><h6>Nomor Telfon/WA</h6></label>
+        <input type="name" class="form-control" id="FormControlInput1" placeholder="Masukkan Nomor Telfon Anda">
+      <label for="FormControlTextarea1"><h6>Keterangan Tambahan</h6></label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea><br>
+      <button type="submit" class="btn btn-primary"><h6>Kirim Data!</h6></button>
+    </div>
+  </form>
 </body>
 </html>
